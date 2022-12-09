@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Z-INDEX</title>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   div{
+        width:100px;
+        height:100px;
+        position:absolute;
+        border: 2px solid red;
+        font-size: 30px;
+    }
+    .box1{
+        background-color: aquamarine;
+        top:100px;
+        left:50px;
+        z-index:10;
+        
+    }
+    .box2{
+        background-color: blue;
+        top:150px;
+      left:100px;
+      z-index: 9;
+     
+    }
+    .box3{
+        background-color: rgb(223, 167, 14);
+        top:200px;
+      left:150px;
+      z-index:8;
+     
+    }
+    .box4{
+        background-color: rgb(17, 184, 53);
+        top:250px;
+      left:200px;
+      z-index: 7;
+     
+    }
+
+    .box5{
+        background-color: aquamarine;
+        top:300px;
+        left:250px;
+        z-index:6;
+        
+    }
+    .box6{
+        background-color: rgb(117, 117, 180);
+        top:350px;
+      left:300px;
+      z-index: 5;
+     
+    }
+    .box7{
+        background-color: rgb(19, 179, 117);
+        top:400px;
+      left:350px;
+      z-index:4;
+     
+    }
+    .box8{
+        background-color: rgb(184, 17, 67);
+        top:450px;
+      left:400px;
+      z-index: 3;
+     
+    }
+    .box9{
+        background-color: rgb(145, 39, 39);
+        top:500px;
+      left:450px;
+      z-index: 2;
+     
+    }
+    .box10{
+        background-color: rgb(12, 96, 110);
+        top:550px;
+      left:500px;
+      z-index: 1;
+     
+    }
+ }
+
+ </style>
+</head>
+<body>
+    <a href="index.html"><h2>home page</h2></a>
+    <h4> Welcome page Z-Index</h4>
+    <div class="box1">A</div>
+    <div class="box2">B</div>
+    <div class="box3">C</div>
+    <div class="box4">D</div>
+    <div class="box5">E</div>
+    <div class="box6">F</div>
+    <div class="box7">G</div>
+    <div class="box8">H</div>
+    <div class="box9">I</div>
+    <div class="box10">J</div>
+
+   
+</body>
+</html>
