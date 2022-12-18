@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid Nested</title>
+    <style>
+         body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            background: rgb(245, 212, 212);
+            width: 700px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5,150px);
+            grid-gap: 20px;
+        }
+        .items{color: #fff; font-size: large; font-weight: bolder;
+            
+        }
+
+        .item1{background: yellowgreen;
+            grid-column: 1/span 5;
+            grid-area: 1/6/1/1;
+        }
+
+        .items-nav{
+            color: #fff; 
+            font-size: large; 
+            font-weight: bolder;
+            text-align: center;
+            padding: 60px 0 0 50px;
+            text-shadow: 2px -1px 1px rgb(25, 0, 255);
+        }
+        .items-side{
+            color: #fff; 
+            font-size: large; 
+            font-weight: bolder;
+            text-align: center;
+            padding: 200px 0 0 20px;
+            text-shadow: 2px -1px 1px rgb(25, 0, 255);
+        }
+        .items-footar{
+            color: #fff; 
+            font-size: large; 
+            font-weight: bolder;
+            text-align: center;
+            padding: 60px 0 0 50px;
+            text-shadow: 2px -1px 1px rgb(25, 0, 255);
+        }
+        .item2{background: yellowgreen;
+            grid-column: 1/span 2;
+            grid-column: 1/3; 
+            grid-row: 2/5;      
+            grid-row: 2/span 3;
+        grid-gap: 20px;
+        }
+        .item3{background: rgb(104, 96, 151);
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,150px);
+
+                grid-column: 3/span 3;
+                grid-row:2/span 3;
+                grid-gap: 10px;
+        
+        }
+        .item3 div{
+                text-align: center;
+                padding: 60px 0 0 5px;
+                font-size: 40px;
+        }
+
+        
+        .item12{background: yellowgreen;
+            grid-column: 1/span 5;
+            grid-area: 5/6/5/1;
+           
+        }
+          
+
+    </style>
+</head>
+<body>
+     <h1><a href="index.html">home page</a> Welcome page Grid Nested CSS</h1>
+
+    <div class="container">
+        <div class="items-nav item1">
+            HEADER NAVIGATION
+        </div>
+        <div class="items-side item2">SIDE NAVIGATION</div>
+        <div class="items item3">
+             <div  style="background: grey;">1</div>
+            <div  style="background: red;">2</div>
+            <div  style="background: rgb(27, 178, 189);">3</div>
+            <div  style="background: rgb(228, 125, 173);">4</div>
+            <div  style="background: rgb(206, 204, 85);">5</div>
+            <div  style="background: rgb(140, 168, 36);">6</div>
+            <div  style="background: black;">7</div>
+            <div  style="background: gold;">8</div>
+            <div  style="background: rgb(116, 112, 92);">9</div>
+    </div>
+        
+        <div class="items-footar item12">FOOTAR NAVIGATION</div>
+        
+    </div>
+</body>
+</html>
